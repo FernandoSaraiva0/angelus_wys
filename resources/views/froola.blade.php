@@ -31,7 +31,7 @@
 
         </div>
         <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js'></script>
-        <script type="text/javascript" scr='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/plugins/files_manager.min.js'></script>
+        <script type="text/javascript" src='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/plugins/files_manager.min.js'></script>
         <script>
             new FroalaEditor("div#froala-editor", {
                 toolbarButtons: [
@@ -39,28 +39,8 @@
                     [ 'alignLeft', 'alignCenter', 'alignRight', 'alignJustify','textColor', 'backgroundColor'],
                     ['formatOLSimple', 'formatUL', 'insertLink','insertImage','insertFiles', 'insertTable'],
                     ['paragraphFormat', 'quote', 'emoticons', 'specialCharacters', 'insertHR'],
-                    ['undo', 'redo', 'clearFormatting', 'selectAll', 'html']
+                    ['undo', 'redo', 'clearFormatting']
                 ],
-
-
-                imageEditButtons: ['imageAlign', 'imageCaption', 'imageRemove', '|', 'imageLink', 'linkOpen', 'linkEdit', 'linkRemove', '-', 'imageDisplay', 'imageStyle', 'imageAlt', 'imageSize'],
-
-
-                //imageMaxSize: 1024 * 1024 * 3,
-
-                //Set the request type
-                imageUploadMethod:'POST',
-
-                //Set the image upload URl.
-                imageUploadURL:'./public/upload',
-
-                  // Configurações de parágrafo
-                paragraphFormat: {
-                    N: 'Normal',
-                    H1: 'Heading 1',
-                    H2: 'Heading 2',
-                    H3: 'Heading 3'
-                }
 
             } );
         </script>
